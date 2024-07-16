@@ -34,7 +34,7 @@
   width: 100%;
   height: auto;
   border-radius: 1rem;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .card_overlay {
@@ -72,5 +72,30 @@
 
 .carousel_arrow_right {
   right: 15px;
+}
+
+.carousel_pagination {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.pagination_dot {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.pagination_dot:hover {
+  transform: scale(1.2);
+}
+
+.pagination_dot-active {
+  background-color: grey;
 }
 
